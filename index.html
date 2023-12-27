@@ -11,30 +11,45 @@
         <!-- Nav bar -->
         <header>
             <a href="#" class="nav-logo">
-                <img src="Assets/Banners/A K (1).png" alt="" />
+                <img src="Assets/Banners/A K.svg" alt="" />
                 <span class="nav-logo-name">Ahmad Khaled</span>
             </a>
             <nav>
                 <a href="#" id="navMain">Home</a>
-                <a href="#">Skills</a>
-                <a href="#">Services</a>
-                <a href="#">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#services">Services</a>
+                <a href="#projects">Projects</a>
                 <button
                     type="button"
                     data-theme-toggle
                     aria-label="Change to light theme"
+                    class="theme-toggler-button"
                 >
-                    Change to light theme (or icon here)
+                    <img
+                        id="light-icon"
+                        src="Assets/Banners/light_mode.svg"
+                        alt="sun"
+                    />
+                    <img
+                        id="dark-icon"
+                        hidden
+                        src="Assets/Banners/dark_mode.svg"
+                        alt="moon"
+                    />
                 </button>
             </nav>
-            <button class="hero-button" id="nav-link-contact">
+            <button
+                class="hero-button"
+                id="nav-link-contact"
+                onclick="location.href='#contact'"
+            >
                 Let's Talk
             </button>
         </header>
         <!-- End Nav bar -->
 
         <!-- Hero -->
-        <section class="hero">
+        <section class="hero" id="hero">
             <div class="hero-child hero-info">
                 <h2>
                     Hi,I'm<br />
@@ -47,26 +62,38 @@
                     together.
                 </h3>
                 <div class="hero-buttons">
-                    <button class="hero-button">Get CV</button>
-                    <button class="hero-button" id="secondary-button">
+                    <button
+                        class="hero-button"
+                        onclick="redirectToGoogleDrive()"
+                    >
+                        Get CV
+                    </button>
+                    <button
+                        class="hero-button"
+                        id="secondary-button"
+                        onclick="location.href='#contact'"
+                    >
                         Contact
                     </button>
                 </div>
                 <div class="social-icons">
-                    <a href="">
-                        <img
+                    <a href="https://github.com/ahmads1990"
+                        ><img
                             src="Assets/Social Links/github-original.svg"
-                            alt=""
-                        />
-                    </a>
-                    <a href="">
+                            alt="github"
+                    /></a>
+                    <a
+                        href="https://www.linkedin.com/in/ahmad-khaled-9ab32114a/"
+                    >
                         <img
                             src="Assets/Social Links/linkedin-original.svg"
-                            alt=""
+                            alt="linkedin"
+                    /></a>
+                    <a href="https://leetcode.com/ahmadKhaled20/">
+                        <img
+                            src="Assets/Social Links/leet.png"
+                            alt="leetCode"
                         />
-                    </a>
-                    <a href="">
-                        <img src="Assets/Social Links/leet.png" alt="" />
                     </a>
                 </div>
             </div>
@@ -76,21 +103,24 @@
         </section>
 
         <!-- skills -->
-        <section class="skills">
+        <section class="skills" id="skills">
             <h2 class="title">Skills</h2>
             <div class="row">
-                <img src="Assets/Skills/html5-plain-wordmark.svg" alt="" />
-                <img src="Assets/Skills/html5-plain-wordmark.svg" alt="" />
-                <img src="Assets/Skills/html5-plain-wordmark.svg" alt="" />
-                <img src="Assets/Skills/html5-plain-wordmark.svg" alt="" />
-                <img src="Assets/Skills/html5-plain-wordmark.svg" alt="" />
+                <img
+                    src="Assets/Skills/html5-plain-wordmark.svg"
+                    alt="html icon"
+                />
+                <img src="Assets/Skills/css3-plain-wordmark.svg" alt="" />
+                <img src="Assets/Skills/javascript-original.svg" alt="" />
+                <img src="Assets/Skills/react-original-wordmark.svg" alt="" />
+                <img src="Assets/Skills/bootstrap-original.svg" alt="" />
             </div>
             <div class="row">
-                <img src="Assets/Skills/html5-plain-wordmark.svg" alt="" />
-                <img src="Assets/Skills/html5-plain-wordmark.svg" alt="" />
-                <img src="Assets/Skills/html5-plain-wordmark.svg" alt="" />
-                <img src="Assets/Skills/html5-plain-wordmark.svg" alt="" />
-                <img src="Assets/Skills/html5-plain-wordmark.svg" alt="" />
+                <img src="Assets/Skills/csharp-plain.svg" alt="" />
+                <img src="Assets/Skills/dotnetcore-original.svg" alt="" />
+                <img src="Assets/Skills/sql-server.png" alt="" />
+                <img src="Assets/Skills/git-original-wordmark.svg" alt="" />
+                <img src="Assets/Skills/python-original.svg" alt="" />
             </div>
         </section>
 
@@ -100,11 +130,11 @@
             <div class="content">
                 <div class="card">
                     <div class="icon">
-                        <img src="Assets/Services/api.png" alt="" />
+                        <img src="Assets/Services/custom.png" alt="" />
                     </div>
                     <div class="info">
-                        <h3>Design Api</h3>
-                        <p>titit</p>
+                        <h3>App Development</h3>
+                        <p></p>
                     </div>
                 </div>
                 <div class="card">
@@ -112,17 +142,17 @@
                         <img src="Assets/Services/api.png" alt="" />
                     </div>
                     <div class="info">
-                        <h3>Design Api</h3>
-                        <p>titit</p>
+                        <h3>Build Api</h3>
+                        <p></p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="icon">
-                        <img src="Assets/Services/api.png" alt="" />
+                        <img src="Assets/Services/landing-page.png" alt="" />
                     </div>
                     <div class="info">
-                        <h3>Design Api</h3>
-                        <p>titit</p>
+                        <h3>Create Website Api</h3>
+                        <p></p>
                     </div>
                 </div>
             </div>
@@ -215,38 +245,60 @@
             </div>
         </section>
 
+        <!-- contact section -->
         <section class="hero" id="contact">
             <div class="hero-child contact-info">
                 <h2 class="title">Get in Touch</h2>
-                <form action="" class="contact-form">
+                <form
+                    name="form1"
+                    class="contact-form"
+                    action="https://formsubmit.io/send/b43e1836-15f9-4bde-ad2c-ecc2f175a2b5"
+                    method="POST"
+                >
+                    <input
+                        name="_redirect"
+                        type="hidden"
+                        id="name"
+                        value="https://your website url"
+                    />
                     <input
                         type="text"
-                        name="fname"
-                        id=""
+                        name="name"
+                        id="name"
                         placeholder="First name"
+                        required
                     /><br />
                     <input
                         type="email"
-                        name=""
-                        id=""
+                        name="email"
+                        id="email"
                         placeholder="Email"
+                        required
                     /><br />
                     <input
                         type="text"
                         name="phoneNumber"
-                        id=""
+                        id="phoneNumber"
                         placeholder="Phone number"
+                        required
                     /><br />
                     <input
                         type="text"
                         name="message"
                         id="message"
                         placeholder="Your message"
+                        required
                     /><br />
                     <input
+                        name="_formsubmit_id"
+                        type="text"
+                        style="display: none"
+                    />
+                    <input
                         class="hero-button"
+                        value="Submit"
                         type="submit"
-                        value="Send Message"
+                        onclick="submit_form()"
                     />
                 </form>
             </div>
@@ -261,33 +313,36 @@
 
         <footer class="footer">
             <div class="footer-links">
-                <a href="">Skills</a>
-                <a href="">Skills</a>
+                <a href="#skills">Skills</a>
+                <a href="#services">Services</a>
                 <div class="footer-logo">A<span>K</span></div>
-                <a href="">Skills</a>
-                <a href="">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
             </div>
             <div class="footer-media">
                 <h3>Follow</h3>
                 <div class="social-icons">
-                    <a href="">
-                        <img
+                    <a href="https://github.com/ahmads1990"
+                        ><img
                             src="Assets/Social Links/github-original.svg"
-                            alt=""
-                        />
-                    </a>
-                    <a href="">
+                            alt="github"
+                    /></a>
+                    <a
+                        href="https://www.linkedin.com/in/ahmad-khaled-9ab32114a/"
+                    >
                         <img
                             src="Assets/Social Links/linkedin-original.svg"
-                            alt=""
+                            alt="linkedin"
+                    /></a>
+                    <a href="https://leetcode.com/ahmadKhaled20/">
+                        <img
+                            src="Assets/Social Links/leet.png"
+                            alt="leetCode"
                         />
-                    </a>
-                    <a href="">
-                        <img src="Assets/Social Links/leet.png" alt="" />
                     </a>
                 </div>
             </div>
-            <p class="footer-rights">CopyRights</p>
+            <p class="footer-rights">CopyRights Ahmad Khaled</p>
         </footer>
     </body>
 </html>

@@ -1,3 +1,13 @@
+function submit_form() {
+    document.formu1.submit();
+    document.formu1.reset();
+}
+// redirects
+function redirectToGoogleDrive() {
+    window.location.href =
+        "https://drive.google.com/file/d/1gtS48wI0ltcc-AuGmpzOlLRJjq7QCfIC/view?usp=sharing";
+}
+// re
 function calculateSettingAsThemeString({
     localStorageTheme,
     systemSettingDark,
@@ -25,14 +35,22 @@ let currentThemeSetting = calculateSettingAsThemeString({
 
 // target the button using the data attribute
 const button = document.querySelector("[data-theme-toggle]");
+const lightIcon = document.getElementById("light-icon");
+const darkIcon = document.getElementById("dark-icon");
+
 button.addEventListener("click", () => {
     const newTheme = currentThemeSetting === "dark" ? "light" : "dark";
 
-    // update the button text
-    const newCta =
-        newTheme === "dark" ? "Change to light theme" : "Change to dark theme";
-    button.innerText = newCta;
+    // update the button
+    const newCta = newTheme === "dark" ? "sun" : "moon";
 
+    if (newTheme == "dark") {
+        lightIcon.style.display = "block";
+        darkIcon.style.display = "none";
+    } else {
+        lightIcon.style.display = "none";
+        darkIcon.style.display = "block";
+    }
     // use an aria-label if you are omitting text on the button
     // and using sun/moon icons, for example
     button.setAttribute("aria-label", newCta);

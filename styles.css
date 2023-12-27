@@ -11,8 +11,12 @@
     --text-secondary-color: #ffffff;
     --text-faded-color: #8d8d8d;
     --text-white-color: #ffffff;
+    --text-black-color: #12070d;
 
     --card-background-color: #f9f2f6;
+
+    --service-background-color: #8094cb;
+    --service-text-color: #ffffff;
 }
 
 [data-theme="dark"] {
@@ -25,10 +29,26 @@
     --text-secondary-color: #000000;
     --text-faded-color: #8d8d8d;
     --text-white-color: #ffffff;
+    --text-black-color: #12070d;
 
-    --card-background-color: #33182a;
+    --card-background-color: #f9f2f6;
+
+    --service-background-color: #365481;
+    --service-text-color: #ffffff;
 }
-
+.theme-toggler-button {
+    background: var(--text-white-color);
+    border: none;
+    border-radius: 1rem;
+    width: 2rem;
+    height: 2rem;
+    margin-left: 10px;
+    padding: 5px;
+}
+.theme-toggler-button img {
+    width: 100%;
+    height: 100%;
+}
 * {
     font-family: "Poppins", sans-serif;
     margin: 0;
@@ -51,7 +71,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 2.5rem 1rem;
+}
+nav {
+    display: flex;
+    align-items: center;
 }
 /* nav left logo */
 .nav-logo {
@@ -59,8 +83,10 @@ header {
     display: flex;
     align-items: center;
 }
+
 .nav-logo img {
-    width: 50px;
+    width: 6rem;
+    color: var(--primary-color);
     height: auto;
 }
 .nav-logo-name {
@@ -86,7 +112,7 @@ nav a:hover {
 #nav-link-contact {
     color: var(--text-secondary-color);
     background-color: var(--primary-color);
-    margin-right: 0rem;
+    padding: 0.5em 2em;
 }
 #nav-link-contact:hover {
     transform: scale(1.05);
@@ -135,7 +161,7 @@ nav a:hover {
     letter-spacing: 1px;
     margin-top: 10px;
     margin-bottom: 30px;
-    width: 50%;
+    width: 75%;
 }
 
 /* hero buttons */
@@ -150,10 +176,10 @@ nav a:hover {
     font-weight: 600;
     display: inline-block;
     border: transparent;
-    padding: 0.5em 2.2em;
+    padding: 0.5em 2em;
     margin-right: 0.5rem;
     letter-spacing: 1px;
-    border-radius: 2px;
+    border-radius: 0.8rem;
     transition: 0.7s ease;
 }
 .hero-button:hover {
@@ -173,11 +199,11 @@ nav a:hover {
 }
 .social-icons a img {
     width: 2rem;
+    background-color: white;
+    border-radius: 1rem;
 }
 
 /* hero banner */
-.hero-banner {
-}
 .hero-banner img {
     height: auto;
 }
@@ -188,6 +214,7 @@ nav a:hover {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 .title {
     display: flex;
@@ -198,14 +225,11 @@ nav a:hover {
     margin-bottom: 50px;
 }
 
-.skills {
-    padding-right: 200px;
-    padding-left: 200px;
-}
 .skills .row {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
     margin-bottom: 80px;
 }
 .skills .row img {
@@ -232,7 +256,7 @@ nav a:hover {
     flex-wrap: wrap;
 }
 .card {
-    background-color: var(--card-background-color);
+    background-color: var(--service-background-color);
     width: 15em;
     box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
     border-radius: 10px;
@@ -250,20 +274,18 @@ nav a:hover {
 .icon img {
     width: 100px;
 }
-.info {
+.card .info h3 {
+    font-size: medium;
+    color: var(--service-text-color);
+    text-align: center;
+    margin-top: 5px;
+}
+.card .info p {
+    font-size: medium;
+    color: var(--service-text-color);
     text-align: center;
 }
 
-.info h3 {
-    color: var(--accent-color);
-    font-size: 1.2em;
-    font-weight: 700;
-    margin: 10px;
-}
-
-.info p {
-    color: var(--text-primary-color);
-}
 /* projects section */
 
 .projects {
@@ -317,7 +339,7 @@ nav a:hover {
 }
 
 .project-title span {
-    color: var(--text-primary-color);
+    color: var(--text-black-color);
 }
 /* contact section */
 #contact {
@@ -345,7 +367,7 @@ textarea {
 }
 input[id="message"],
 textarea {
-    padding-bottom: 200px;
+    padding-bottom: 150px;
 }
 input[type="submit"] {
     background-color: var(--secondary-color);
@@ -404,12 +426,17 @@ input[type="submit"] {
     color: var(--text-white-color);
 }
 @media (max-width: 1023px) {
+    #nav-link-contact {
+        padding: 0.5rem 0.5rem;
+        font-size: small;
+    }
+
     .hero-banner {
         width: 50%;
         height: 50%;
     }
     header {
-        padding: 12px 20px;
+        /* padding: 12px 20px; */
     }
     .navigation {
         padding-left: 10px;
