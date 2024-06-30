@@ -36,19 +36,7 @@
     --service-background-color: #365481;
     --service-text-color: #ffffff;
 }
-.theme-toggler-button {
-    background: var(--text-white-color);
-    border: none;
-    border-radius: 1rem;
-    width: 2rem;
-    height: 2rem;
-    margin-left: 10px;
-    padding: 5px;
-}
-.theme-toggler-button img {
-    width: 100%;
-    height: 100%;
-}
+
 * {
     font-family: "Poppins", sans-serif;
     margin: 0;
@@ -73,10 +61,6 @@ header {
     align-items: center;
     padding: 2.5rem 1rem;
 }
-nav {
-    display: flex;
-    align-items: center;
-}
 /* nav left logo */
 .nav-logo {
     text-decoration: none;
@@ -95,12 +79,18 @@ nav {
     font-weight: 600;
 }
 /* nav middle links */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 4rem;
+}
 nav a {
     color: var(--text-primary-color);
     text-decoration: none;
     font-size: 1.1em;
     font-weight: 500;
-    margin-left: 20px;
+    margin-right: 20px;
 }
 nav a:hover {
     color: var(--accent-color);
@@ -108,15 +98,62 @@ nav a:hover {
 #navMain {
     color: var(--primary-color);
 }
-/* nav right button */
-#nav-link-contact {
+/* nav right Section */
+.nav-options {
+    display: flex;
+    align-items: center;
+}
+/* Start Lang Translator */
+.lang-translator {
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 100%;
+}
+/* End Lang Translator */
+/* Start Theme Toggler */
+.theme-toggler {
+    position: relative;
+    width: 3.5rem;
+    height: 1.8rem;
+    background-color: transparent;
+    border: solid 1px var(--text-primary-color);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.theme-toggler-circle {
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: var(--text-primary-color);
+    left: 3px;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+.theme-toggler-circle i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 4px;
     color: var(--text-secondary-color);
-    background-color: var(--primary-color);
-    padding: 0.5em 2em;
 }
-#nav-link-contact:hover {
-    transform: scale(1.05);
+.theme-toggler--isActive {
+    border: solid 1px var(--text-secondary-color);
 }
+.theme-toggler--isActive .theme-toggler-circle {
+    /* left: calc(52-21-3); */
+    left: 28px;
+    background-color: var(--text-primary-color);
+    color: var(--text-secondary-color);
+}
+/* End Theme Toggler */
+
 /* end header */
 
 /* hero start */
@@ -289,10 +326,7 @@ nav a:hover {
 /* projects section */
 
 .projects {
-    background-image: linear-gradient(
-        var(--secondary-color),
-        var(--background-color)
-    );
+    background-image: linear-gradient(var(--secondary-color), var(--background-color));
 }
 
 .projects .content {

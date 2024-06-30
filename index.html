@@ -4,48 +4,42 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="styles.css" />
-
-        <title>Document</title>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        />
+        <title>Ahmad Khaled Portfolio</title>
     </head>
     <body>
-        <script defer src="scripts.js"></script>
+        <script defer type="module" src="scripts.js"></script>
         <!-- Nav bar -->
         <header>
+            <!-- Left section logo -->
             <a href="#" class="nav-logo">
                 <img src="Assets/Banners/A K.svg" alt="" />
                 <span class="nav-logo-name">Ahmad Khaled</span>
             </a>
+            <!-- Middle section links -->
             <nav>
                 <a href="#" id="navMain">Home</a>
                 <a href="#skills">Skills</a>
                 <a href="#services">Services</a>
                 <a href="#projects">Projects</a>
-                <button
-                    type="button"
-                    data-theme-toggle
-                    aria-label="Change to light theme"
-                    class="theme-toggler-button"
-                >
-                    <img
-                        id="light-icon"
-                        src="Assets/Banners/light_mode.svg"
-                        alt="sun"
-                    />
-                    <img
-                        id="dark-icon"
-                        hidden
-                        src="Assets/Banners/dark_mode.svg"
-                        alt="moon"
-                    />
-                </button>
             </nav>
-            <button
-                class="hero-button"
-                id="nav-link-contact"
-                onclick="location.href='#contact'"
-            >
-                Let's Talk
-            </button>
+            <!-- Right section options -->
+            <!-- <button class="hero-button" id="nav-link-contact" onclick="location.href='#contact'">Let's Talk</button> -->
+            <div class="nav-options">
+                <!-- Language selector -->
+                <!-- <button class="lang-translator"><i class="bi bi-translate"></i></button> -->
+
+                <!-- Theme selector -->
+                <div class="theme-toggler" data-theme-toggle aria-label="Change to light theme">
+                    <div class="theme-toggler-circle">
+                        <i id="light-icon" class="bi bi-brightness-high-fill" alt="sun"></i>
+                        <i id="dark-icon" class="bi bi-moon-stars-fill" alt="moon"></i>
+                    </div>
+                </div>
+            </div>
         </header>
         <!-- End Nav bar -->
 
@@ -58,43 +52,24 @@
                     <span class="hero-title">Software Developer</span>
                 </h2>
                 <h3>
-                    Welcome to my portfolio of captivating digital experiences.
-                    Explore my work and let's create something extraordinary
-                    together.
+                    Welcome to my portfolio of captivating digital experiences. Explore my work and let's create
+                    something extraordinary together.
                 </h3>
                 <div class="hero-buttons">
-                    <button
-                        class="hero-button"
-                        onclick="redirectToGoogleDrive()"
-                    >
-                        Get CV
-                    </button>
-                    <button
-                        class="hero-button"
-                        id="secondary-button"
-                        onclick="location.href='#contact'"
-                    >
+                    <button class="hero-button" onclick="redirectToGoogleDrive()">Get CV</button>
+                    <button class="hero-button" id="secondary-button" onclick="location.href='#contact'">
                         Contact
                     </button>
                 </div>
                 <div class="social-icons">
                     <a href="https://github.com/ahmads1990"
-                        ><img
-                            src="Assets/Social Links/github-original.svg"
-                            alt="github"
+                        ><img src="Assets/Social Links/github-original.svg" alt="github"
                     /></a>
-                    <a
-                        href="https://www.linkedin.com/in/ahmad-khaled-9ab32114a/"
-                    >
-                        <img
-                            src="Assets/Social Links/linkedin-original.svg"
-                            alt="linkedin"
+                    <a href="https://www.linkedin.com/in/ahmad-khaled-9ab32114a/">
+                        <img src="Assets/Social Links/linkedin-original.svg" alt="linkedin"
                     /></a>
                     <a href="https://leetcode.com/ahmadKhaled20/">
-                        <img
-                            src="Assets/Social Links/leet.png"
-                            alt="leetCode"
-                        />
+                        <img src="Assets/Social Links/leet.png" alt="leetCode" />
                     </a>
                 </div>
             </div>
@@ -107,10 +82,7 @@
         <section class="skills" id="skills">
             <h2 class="title">Skills</h2>
             <div class="row">
-                <img
-                    src="Assets/Skills/html5-plain-wordmark.svg"
-                    alt="html icon"
-                />
+                <img src="Assets/Skills/html5-plain-wordmark.svg" alt="html icon" />
                 <img src="Assets/Skills/css3-plain-wordmark.svg" alt="" />
                 <img src="Assets/Skills/javascript-original.svg" alt="" />
                 <img src="Assets/Skills/react-original-wordmark.svg" alt="" />
@@ -171,11 +143,7 @@
                         <p class="project-category"></p>
                         <strong class="project-title">
                             <span>Dev Books</span>
-                            <a href="#" class="more-details"
-                                ><img
-                                    src="Assets/Banners/ProjectLink.png"
-                                    alt=""
-                            /></a>
+                            <a href="#" class="more-details"><img src="Assets/Banners/ProjectLink.png" alt="" /></a>
                         </strong>
                     </div>
                 </div>
@@ -187,11 +155,7 @@
                         <p class="project-category"></p>
                         <strong class="project-title">
                             <span>Dev Books</span>
-                            <a href="#" class="more-details"
-                                ><img
-                                    src="Assets/Banners/ProjectLink.png"
-                                    alt=""
-                            /></a>
+                            <a href="#" class="more-details"><img src="Assets/Banners/ProjectLink.png" alt="" /></a>
                         </strong>
                     </div>
                 </div>
@@ -203,11 +167,7 @@
                         <p class="project-category"></p>
                         <strong class="project-title">
                             <span>Dev Books</span>
-                            <a href="#" class="more-details"
-                                ><img
-                                    src="Assets/Banners/ProjectLink.png"
-                                    alt=""
-                            /></a>
+                            <a href="#" class="more-details"><img src="Assets/Banners/ProjectLink.png" alt="" /></a>
                         </strong>
                     </div>
                 </div>
@@ -219,11 +179,7 @@
                         <p class="project-category"></p>
                         <strong class="project-title">
                             <span>Dev Books</span>
-                            <a href="#" class="more-details"
-                                ><img
-                                    src="Assets/Banners/ProjectLink.png"
-                                    alt=""
-                            /></a>
+                            <a href="#" class="more-details"><img src="Assets/Banners/ProjectLink.png" alt="" /></a>
                         </strong>
                     </div>
                 </div>
@@ -235,11 +191,7 @@
                         <p class="project-category"></p>
                         <strong class="project-title">
                             <span>Dev Books</span>
-                            <a href="#" class="more-details"
-                                ><img
-                                    src="Assets/Banners/ProjectLink.png"
-                                    alt=""
-                            /></a>
+                            <a href="#" class="more-details"><img src="Assets/Banners/ProjectLink.png" alt="" /></a>
                         </strong>
                     </div>
                 </div>
@@ -256,54 +208,17 @@
                     action="https://formsubmit.io/send/b43e1836-15f9-4bde-ad2c-ecc2f175a2b5"
                     method="POST"
                 >
-                    <input
-                        name="_redirect"
-                        type="hidden"
-                        id="name"
-                        value="https://ahmadkhaled.me"
-                    />
-                    <input
-                        type="text"
-                        name="name"
-                        id="name"
-                        placeholder="First name"
-                        required
-                    /><br />
-                    <input
-                        type="email"
-                        name="email"
-                        id="email"
-                        placeholder="Email"
-                        required
-                    /><br />
-                    <input
-                        type="text"
-                        name="phoneNumber"
-                        id="phoneNumber"
-                        placeholder="Phone number"
-                        required
-                    /><br />
-                    <input
-                        type="text"
-                        name="message"
-                        id="message"
-                        placeholder="Your message"
-                        required
-                    /><br />
-                    <input
-                        name="_formsubmit_id"
-                        type="text"
-                        style="display: none"
-                    />
+                    <input name="_redirect" type="hidden" id="name" value="https://ahmadkhaled.me" />
+                    <input type="text" name="name" id="name" placeholder="First name" required /><br />
+                    <input type="email" name="email" id="email" placeholder="Email" required /><br />
+                    <input type="text" name="phoneNumber" id="phoneNumber" placeholder="Phone number" required /><br />
+                    <input type="text" name="message" id="message" placeholder="Your message" required /><br />
+                    <input name="_formsubmit_id" type="text" style="display: none" />
                     <input class="hero-button" value="Submit" type="submit" />
                 </form>
             </div>
             <div class="hero-child hero-banner">
-                <img
-                    class="hero-banner"
-                    src="Assets/Banners/Sent Message-bro (3).svg"
-                    alt=""
-                />
+                <img class="hero-banner" src="Assets/Banners/Sent Message-bro (3).svg" alt="" />
             </div>
         </section>
 
@@ -319,22 +234,13 @@
                 <h3>Follow</h3>
                 <div class="social-icons">
                     <a href="https://github.com/ahmads1990"
-                        ><img
-                            src="Assets/Social Links/github-original.svg"
-                            alt="github"
+                        ><img src="Assets/Social Links/github-original.svg" alt="github"
                     /></a>
-                    <a
-                        href="https://www.linkedin.com/in/ahmad-khaled-9ab32114a/"
-                    >
-                        <img
-                            src="Assets/Social Links/linkedin-original.svg"
-                            alt="linkedin"
+                    <a href="https://www.linkedin.com/in/ahmad-khaled-9ab32114a/">
+                        <img src="Assets/Social Links/linkedin-original.svg" alt="linkedin"
                     /></a>
                     <a href="https://leetcode.com/ahmadKhaled20/">
-                        <img
-                            src="Assets/Social Links/leet.png"
-                            alt="leetCode"
-                        />
+                        <img src="Assets/Social Links/leet.png" alt="leetCode" />
                     </a>
                 </div>
             </div>
