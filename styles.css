@@ -69,7 +69,7 @@ header {
 }
 
 .nav-logo img {
-    width: 6rem;
+    width: 5rem;
     color: var(--primary-color);
     height: auto;
 }
@@ -175,10 +175,13 @@ nav a:hover {
     font-size: 1.6em;
     font-weight: 500;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 .hero h2 span {
     display: inline-block;
-    margin-top: 10px;
+    margin-left: -0.3rem;
     font-size: 2em;
     font-weight: 600;
 }
@@ -190,8 +193,8 @@ nav a:hover {
 }
 .hero h3 {
     color: var(--text-primary-color);
-    font-size: 1em;
-    font-weight: 200;
+    font-size: 1.2em;
+    font-weight: 300;
     letter-spacing: 1px;
     margin-top: 10px;
     margin-bottom: 30px;
@@ -350,6 +353,8 @@ nav a:hover {
 
 .project-image img {
     width: 100%;
+    width: 23em;
+    height: 13em;
 }
 
 .project-info {
@@ -366,12 +371,26 @@ nav a:hover {
     justify-content: space-between;
     text-transform: uppercase;
     font-weight: 800;
-    margin-top: 10px;
-}
-
-.project-title span {
+    /* margin-top: 10px; */
     color: var(--text-black-color);
 }
+.project-links {
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: end;
+}
+.project-links a {
+    padding: 0.4rem;
+    font-size: 0.9rem;
+    color: var(--text-white-color);
+}
+.project-links .live-link {
+    background-color: var(--accent-color);
+}
+.project-links .git-link {
+    background-color: var(--text-faded-color);
+}
+.project-links .git-link .im
 /* contact section */
 #contact {
     background-color: var(--primary-color);
