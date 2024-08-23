@@ -9,6 +9,7 @@ function submit_form() {
 function redirectToGoogleDrive() {
     window.location.href = "https://drive.google.com/file/d/1gtS48wI0ltcc-AuGmpzOlLRJjq7QCfIC/view?usp=sharing";
 }
+window.redirectToGoogleDrive = redirectToGoogleDrive;
 
 /*
  * On page load: Theme Toggler
