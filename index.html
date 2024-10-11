@@ -12,6 +12,7 @@
     </head>
     <body>
         <script defer type="module" src="scripts.js"></script>
+
         <!-- Nav bar -->
         <header>
             <!-- Left section logo -->
@@ -19,8 +20,14 @@
                 <img src="Assets/Banners/A K.svg" alt="" />
                 <span class="nav-logo-name">Ahmad Khaled</span>
             </a>
+
+            <!-- Toggle button for mobile view -->
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <i class="bi bi-list"></i>
+            </button>
+
             <!-- Middle section links -->
-            <nav>
+            <nav id="navLinks">
                 <a href="#" id="navMain">Home</a>
                 <a href="#skills">Skills</a>
                 <a href="#services">Services</a>
@@ -150,10 +157,7 @@
                             <a href="https://github.com/ahmads1990/E-CommerceWebApp" class="hero-button git-link">
                                 Visit Docs <i class="bi bi-github"></i>
                             </a>
-                            <a
-                                href="https://ecommercemvc.runasp.net/"
-                                class="hero-button live-link"
-                            >
+                            <a href="https://ecommercemvc.runasp.net/" class="hero-button live-link">
                                 Visit Live <i class="bi bi-arrow-right"></i>
                             </a>
                         </div>
@@ -273,5 +277,13 @@
             </div>
             <p class="footer-rights">CopyRights Ahmad Khaled</p>
         </footer>
+        <script>
+            const navToggle = document.getElementById("navToggle");
+            const navLinks = document.getElementById("navLinks");
+
+            navToggle.addEventListener("click", () => {
+                navLinks.classList.toggle("active");
+            });
+        </script>
     </body>
 </html>
