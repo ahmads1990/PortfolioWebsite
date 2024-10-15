@@ -11,279 +11,287 @@
         <title>Ahmad Khaled Portfolio</title>
     </head>
     <body>
-        <script defer type="module" src="scripts.js"></script>
+        <div style="overflow-x: hidden">
+            <script defer type="module" src="scripts.js"></script>
 
-        <!-- Nav bar -->
-        <header>
-            <!-- Left section logo -->
-            <a href="#" class="nav-logo">
-                <img src="Assets/Banners/A K.svg" alt="" />
-                <span class="nav-logo-name">Ahmad Khaled</span>
-            </a>
+            <!-- Nav bar -->
+            <header>
+                <!-- Left section logo -->
+                <a href="#" class="nav-logo">
+                    <img src="Assets/Banners/A K.svg" alt="" />
+                    <span class="nav-logo-name">Ahmad Khaled</span>
+                </a>
 
-            <!-- Toggle button for mobile view -->
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-                <i class="bi bi-list"></i>
-            </button>
+                <!-- Toggle button for mobile view -->
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <i class="bi bi-list"></i>
+                </button>
 
-            <!-- Middle section links -->
-            <nav id="navLinks">
-                <a href="#" id="navMain">Home</a>
-                <a href="#skills">Skills</a>
-                <a href="#services">Services</a>
-                <a href="#projects">Projects</a>
-            </nav>
-            <!-- Right section options -->
-            <!-- <button class="hero-button" id="nav-link-contact" onclick="location.href='#contact'">Let's Talk</button> -->
-            <div class="nav-options">
-                <!-- Language selector -->
-                <!-- <button class="lang-translator"><i class="bi bi-translate"></i></button> -->
+                <!-- Middle section links -->
+                <nav id="navLinks">
+                    <a href="#" id="navMain">Home</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#services">Services</a>
+                    <a href="#projects">Projects</a>
+                </nav>
+                <!-- Right section options -->
+                <!-- <button class="hero-button" id="nav-link-contact" onclick="location.href='#contact'">Let's Talk</button> -->
+                <div class="nav-options">
+                    <!-- Language selector -->
+                    <!-- <button class="lang-translator"><i class="bi bi-translate"></i></button> -->
 
-                <!-- Theme selector -->
-                <div class="theme-toggler" data-theme-toggle aria-label="Change to light theme">
-                    <div class="theme-toggler-circle">
-                        <i id="light-icon" class="bi bi-brightness-high-fill" alt="sun"></i>
-                        <i id="dark-icon" class="bi bi-moon-stars-fill" alt="moon"></i>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- End Nav bar -->
-
-        <!-- Hero -->
-        <section class="hero" id="hero">
-            <div class="hero-child hero-info">
-                <h2>
-                    Hi,I'm
-                    <span class="hero-name">Ahmad Khaled</span>
-                    <span class="hero-title">Software Developer</span>
-                </h2>
-                <h3>
-                    Video game enthusiast with a love for rally races, living in Giza, Egypt. I enjoy creating products
-                    that make an impact.
-                </h3>
-                <div class="hero-buttons">
-                    <button class="hero-button" onclick="redirectToGoogleDrive()">Get CV</button>
-                    <button class="hero-button" id="secondary-button" onclick="location.href='#contact'">
-                        Contact
-                    </button>
-                </div>
-                <div class="social-icons">
-                    <a href="https://github.com/ahmads1990"
-                        ><img src="Assets/Social Links/github-original.svg" alt="github"
-                    /></a>
-                    <a href="https://www.linkedin.com/in/ahmad-khaled-9ab32114a/">
-                        <img src="Assets/Social Links/linkedin-original.svg" alt="linkedin"
-                    /></a>
-                    <a href="https://leetcode.com/ahmadKhaled20/">
-                        <img src="Assets/Social Links/leet.png" alt="leetCode" />
-                    </a>
-                </div>
-            </div>
-            <div class="hero-child hero-banner">
-                <img src="Assets/Banners/Code typing-bro.svg" alt="" />
-            </div>
-        </section>
-
-        <!-- skills -->
-        <section class="skills" id="skills">
-            <h2 class="title">Skills</h2>
-            <div class="row">
-                <img src="Assets/Skills/html5-plain-wordmark.svg" alt="html icon" />
-                <img src="Assets/Skills/css3-plain-wordmark.svg" alt="" />
-                <img src="Assets/Skills/javascript-original.svg" alt="" />
-                <img src="Assets/Skills/react-original-wordmark.svg" alt="" />
-                <img src="Assets/Skills/bootstrap-original.svg" alt="" />
-            </div>
-            <div class="row">
-                <img src="Assets/Skills/csharp-plain.svg" alt="" />
-                <img src="Assets/Skills/dotnetcore-original.svg" alt="" />
-                <img src="Assets/Skills/sql-server.png" alt="" />
-                <img src="Assets/Skills/git-original-wordmark.svg" alt="" />
-                <img src="Assets/Skills/python-original.svg" alt="" />
-            </div>
-        </section>
-
-        <!-- services -->
-        <section class="cards" id="services">
-            <h2 class="title" id="services-title">Services</h2>
-            <div class="content">
-                <div class="card">
-                    <div class="icon">
-                        <img src="Assets/Services/custom.png" alt="" />
-                    </div>
-                    <div class="info">
-                        <h3>App Development</h3>
-                        <p></p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="icon">
-                        <img src="Assets/Services/api.png" alt="" />
-                    </div>
-                    <div class="info">
-                        <h3>Build Api</h3>
-                        <p></p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="icon">
-                        <img src="Assets/Services/landing-page.png" alt="" />
-                    </div>
-                    <div class="info">
-                        <h3>Create Website Api</h3>
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- projects -->
-        <section class="projects" id="projects">
-            <h2 class="title">Projects</h2>
-            <div class="content">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="/Assets/Projects/ecommerce.jpeg" alt="E-commerce project thumbnail" />
-                    </div>
-                    <div class="project-info">
-                        <!-- <p class="project-category"></p> -->
-                        <strong class="project-title"> Asp.net MVC E-commerce </strong>
-                        <!-- <div class="project-desc">
-                            <i class="bi bi-caret-right-fill"></i>
-                            <span class="project-desc-text"></span>
-                        </div> -->
-                        <div class="project-links">
-                            <a href="https://github.com/ahmads1990/E-CommerceWebApp" class="hero-button git-link">
-                                Visit Docs <i class="bi bi-github"></i>
-                            </a>
-                            <a href="https://ecommercemvc.runasp.net/" class="hero-button live-link">
-                                Visit Live <i class="bi bi-arrow-right"></i>
-                            </a>
+                    <!-- Theme selector -->
+                    <div class="theme-toggler" data-theme-toggle aria-label="Change to light theme">
+                        <div class="theme-toggler-circle">
+                            <i id="light-icon" class="bi bi-brightness-high-fill" alt="sun"></i>
+                            <i id="dark-icon" class="bi bi-moon-stars-fill" alt="moon"></i>
                         </div>
                     </div>
                 </div>
+            </header>
+            <!-- End Nav bar -->
 
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="/Assets/Projects/MusicApi.jpg" alt="E-commerce project thumbnail" />
+            <!-- Hero -->
+            <section class="hero" id="hero">
+                <div class="hero-child hero-info">
+                    <h2>
+                        Hi,I'm
+                        <span class="hero-name">Ahmad Khaled</span>
+                        <span class="hero-title">Software Developer</span>
+                    </h2>
+                    <h3>
+                        Video game enthusiast with a love for rally races, living in Giza, Egypt. I enjoy creating
+                        products that make an impact.
+                    </h3>
+                    <div class="hero-buttons">
+                        <button class="hero-button" onclick="redirectToGoogleDrive()">Get CV</button>
+                        <button class="hero-button" id="secondary-button" onclick="location.href='#contact'">
+                            Contact
+                        </button>
                     </div>
-                    <div class="project-info">
-                        <!-- <p class="project-category"></p> -->
-                        <strong class="project-title"> Asp.net Music Streaming Api </strong>
-                        <!-- <div class="project-desc">
-                            <i class="bi bi-caret-right-fill"></i>
-                            <span class="project-desc-text"></span>
-                        </div> -->
-                        <div class="project-links">
-                            <a href="https://github.com/ahmads1990/MusicApi" class="hero-button git-link">
-                                Visit Docs <i class="bi bi-github"></i>
-                            </a>
+                    <div class="social-icons">
+                        <a href="https://github.com/ahmads1990"
+                            ><img src="Assets/Social Links/github-original.svg" alt="github"
+                        /></a>
+                        <a href="https://www.linkedin.com/in/ahmad-khaled-9ab32114a/">
+                            <img src="Assets/Social Links/linkedin-original.svg" alt="linkedin"
+                        /></a>
+                        <a href="https://leetcode.com/ahmadKhaled20/">
+                            <img src="Assets/Social Links/leet.png" alt="leetCode" />
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-child hero-banner">
+                    <img src="Assets/Banners/Code typing-bro.svg" alt="" />
+                </div>
+            </section>
+
+            <!-- skills -->
+            <section class="skills" id="skills">
+                <h2 class="title">Skills</h2>
+                <div class="row">
+                    <img src="Assets/Skills/html5-plain-wordmark.svg" alt="html icon" />
+                    <img src="Assets/Skills/css3-plain-wordmark.svg" alt="" />
+                    <img src="Assets/Skills/javascript-original.svg" alt="" />
+                    <img src="Assets/Skills/react-original-wordmark.svg" alt="" />
+                    <img src="Assets/Skills/bootstrap-original.svg" alt="" />
+                </div>
+                <div class="row">
+                    <img src="Assets/Skills/csharp-plain.svg" alt="" />
+                    <img src="Assets/Skills/dotnetcore-original.svg" alt="" />
+                    <img src="Assets/Skills/sql-server.png" alt="" />
+                    <img src="Assets/Skills/git-original-wordmark.svg" alt="" />
+                    <img src="Assets/Skills/python-original.svg" alt="" />
+                </div>
+            </section>
+
+            <!-- services -->
+            <section class="cards" id="services">
+                <h2 class="title" id="services-title">Services</h2>
+                <div class="content">
+                    <div class="card">
+                        <div class="icon">
+                            <img src="Assets/Services/custom.png" alt="" />
+                        </div>
+                        <div class="info">
+                            <h3>App Development</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="icon">
+                            <img src="Assets/Services/api.png" alt="" />
+                        </div>
+                        <div class="info">
+                            <h3>Build Api</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="icon">
+                            <img src="Assets/Services/landing-page.png" alt="" />
+                        </div>
+                        <div class="info">
+                            <h3>Create Website Api</h3>
+                            <p></p>
                         </div>
                     </div>
                 </div>
+            </section>
 
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="/Assets/Projects/DojoBlog.png" alt="DojoBlog project thumbnail" />
-                    </div>
-                    <div class="project-info">
-                        <!-- <p class="project-category"></p> -->
-                        <strong class="project-title"> Fullstack Dojo Blog </strong>
-                        <!-- <div class="project-desc">
+            <!-- projects -->
+            <section class="projects" id="projects">
+                <h2 class="title">Projects</h2>
+                <div class="content">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="/Assets/Projects/ecommerce.jpeg" alt="E-commerce project thumbnail" />
+                        </div>
+                        <div class="project-info">
+                            <!-- <p class="project-category"></p> -->
+                            <strong class="project-title"> Asp.net MVC E-commerce </strong>
+                            <!-- <div class="project-desc">
                             <i class="bi bi-caret-right-fill"></i>
                             <span class="project-desc-text"></span>
                         </div> -->
-                        <div class="project-links">
-                            <a href="https://github.com/ahmads1990/DojoBlog" class="hero-button git-link">
-                                Visit Docs <i class="bi bi-github"></i>
-                            </a>
-                            <a href="https://dojoblog.ahmadkhaled.me/" class="hero-button live-link">
-                                Visit Live <i class="bi bi-arrow-right"></i>
-                            </a>
+                            <div class="project-links">
+                                <a href="https://github.com/ahmads1990/E-CommerceWebApp" class="hero-button git-link">
+                                    Visit Docs <i class="bi bi-github"></i>
+                                </a>
+                                <a href="https://ecommercemvc.runasp.net/" class="hero-button live-link">
+                                    Visit Live <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="/Assets/Projects/Hangman.png" alt="Hangman project thumbnail" />
-                    </div>
-                    <div class="project-info">
-                        <!-- <p class="project-category"></p> -->
-                        <strong class="project-title"> Hangman game </strong>
-                        <!-- <div class="project-desc">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="/Assets/Projects/MusicApi.jpg" alt="E-commerce project thumbnail" />
+                        </div>
+                        <div class="project-info">
+                            <!-- <p class="project-category"></p> -->
+                            <strong class="project-title"> Asp.net Music Streaming Api </strong>
+                            <!-- <div class="project-desc">
                             <i class="bi bi-caret-right-fill"></i>
                             <span class="project-desc-text"></span>
                         </div> -->
-                        <div class="project-links">
-                            <a href="https://github.com/ahmads1990/ReactHangmanGame" class="hero-button git-link">
-                                Visit Docs <i class="bi bi-github"></i>
-                            </a>
-                            <a href="https://hangman.ahmadkhaled.me/" class="hero-button live-link">
-                                Visit Live <i class="bi bi-arrow-right"></i>
-                            </a>
+                            <div class="project-links">
+                                <a href="https://github.com/ahmads1990/MusicApi" class="hero-button git-link">
+                                    Visit Docs <i class="bi bi-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="/Assets/Projects/DojoBlog.png" alt="DojoBlog project thumbnail" />
+                        </div>
+                        <div class="project-info">
+                            <!-- <p class="project-category"></p> -->
+                            <strong class="project-title"> Fullstack Dojo Blog </strong>
+                            <!-- <div class="project-desc">
+                            <i class="bi bi-caret-right-fill"></i>
+                            <span class="project-desc-text"></span>
+                        </div> -->
+                            <div class="project-links">
+                                <a href="https://github.com/ahmads1990/DojoBlog" class="hero-button git-link">
+                                    Visit Docs <i class="bi bi-github"></i>
+                                </a>
+                                <a href="https://dojoblog.ahmadkhaled.me/" class="hero-button live-link">
+                                    Visit Live <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="/Assets/Projects/Hangman.png" alt="Hangman project thumbnail" />
+                        </div>
+                        <div class="project-info">
+                            <!-- <p class="project-category"></p> -->
+                            <strong class="project-title"> Hangman game </strong>
+                            <!-- <div class="project-desc">
+                            <i class="bi bi-caret-right-fill"></i>
+                            <span class="project-desc-text"></span>
+                        </div> -->
+                            <div class="project-links">
+                                <a href="https://github.com/ahmads1990/ReactHangmanGame" class="hero-button git-link">
+                                    Visit Docs <i class="bi bi-github"></i>
+                                </a>
+                                <a href="https://hangman.ahmadkhaled.me/" class="hero-button live-link">
+                                    Visit Live <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- contact section -->
-        <section class="hero" id="contact">
-            <div class="hero-child contact-info">
-                <h2 class="title">Get in Touch</h2>
-                <form
-                    name="form1"
-                    class="contact-form"
-                    action="https://formsubmit.io/send/b43e1836-15f9-4bde-ad2c-ecc2f175a2b5"
-                    method="POST"
-                >
-                    <input name="_redirect" type="hidden" id="name" value="https://ahmadkhaled.me" />
-                    <input type="text" name="name" id="name" placeholder="First name" required /><br />
-                    <input type="email" name="email" id="email" placeholder="Email" required /><br />
-                    <input type="text" name="phoneNumber" id="phoneNumber" placeholder="Phone number" required /><br />
-                    <input type="text" name="message" id="message" placeholder="Your message" required /><br />
-                    <input name="_formsubmit_id" type="text" style="display: none" />
-                    <input class="hero-button" value="Submit" type="submit" />
-                </form>
-            </div>
-            <div class="hero-child hero-banner">
-                <img class="hero-banner" src="Assets/Banners/Sent Message-bro (3).svg" alt="" />
-            </div>
-        </section>
-
-        <footer class="footer">
-            <div class="footer-links">
-                <a href="#skills">Skills</a>
-                <a href="#services">Services</a>
-                <div class="footer-logo">A<span>K</span></div>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-            </div>
-            <div class="footer-media">
-                <h3>Follow</h3>
-                <div class="social-icons">
-                    <a href="https://github.com/ahmads1990"
-                        ><img src="Assets/Social Links/github-original.svg" alt="github"
-                    /></a>
-                    <a href="https://www.linkedin.com/in/ahmad-khaled-9ab32114a/">
-                        <img src="Assets/Social Links/linkedin-original.svg" alt="linkedin"
-                    /></a>
-                    <a href="https://leetcode.com/ahmadKhaled20/">
-                        <img src="Assets/Social Links/leet.png" alt="leetCode" />
-                    </a>
+            <!-- contact section -->
+            <section class="hero" id="contact">
+                <div class="hero-child contact-info">
+                    <h2 class="title">Get in Touch</h2>
+                    <form
+                        name="form1"
+                        class="contact-form"
+                        action="https://formsubmit.io/send/b43e1836-15f9-4bde-ad2c-ecc2f175a2b5"
+                        method="POST"
+                    >
+                        <input name="_redirect" type="hidden" id="name" value="https://ahmadkhaled.me" />
+                        <input type="text" name="name" id="name" placeholder="First name" required /><br />
+                        <input type="email" name="email" id="email" placeholder="Email" required /><br />
+                        <input
+                            type="text"
+                            name="phoneNumber"
+                            id="phoneNumber"
+                            placeholder="Phone number"
+                            required
+                        /><br />
+                        <input type="text" name="message" id="message" placeholder="Your message" required /><br />
+                        <input name="_formsubmit_id" type="text" style="display: none" />
+                        <input class="hero-button" value="Submit" type="submit" />
+                    </form>
                 </div>
-            </div>
-            <p class="footer-rights">CopyRights Ahmad Khaled</p>
-        </footer>
-        <script>
-            const navToggle = document.getElementById("navToggle");
-            const navLinks = document.getElementById("navLinks");
+                <div class="hero-child hero-banner">
+                    <img class="hero-banner" src="Assets/Banners/Sent Message-bro (3).svg" alt="" />
+                </div>
+            </section>
 
-            navToggle.addEventListener("click", () => {
-                navLinks.classList.toggle("active");
-            });
-        </script>
+            <footer class="footer">
+                <div class="footer-links">
+                    <a href="#skills">Skills</a>
+                    <a href="#services">Services</a>
+                    <div class="footer-logo">A<span>K</span></div>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-media">
+                    <h3>Follow</h3>
+                    <div class="social-icons">
+                        <a href="https://github.com/ahmads1990"
+                            ><img src="Assets/Social Links/github-original.svg" alt="github"
+                        /></a>
+                        <a href="https://www.linkedin.com/in/ahmad-khaled-9ab32114a/">
+                            <img src="Assets/Social Links/linkedin-original.svg" alt="linkedin"
+                        /></a>
+                        <a href="https://leetcode.com/ahmadKhaled20/">
+                            <img src="Assets/Social Links/leet.png" alt="leetCode" />
+                        </a>
+                    </div>
+                </div>
+                <p class="footer-rights">CopyRights Ahmad Khaled</p>
+            </footer>
+            <script>
+                const navToggle = document.getElementById("navToggle");
+                const navLinks = document.getElementById("navLinks");
+
+                navToggle.addEventListener("click", () => {
+                    navLinks.classList.toggle("active");
+                });
+            </script>
+        </div>
     </body>
 </html>
